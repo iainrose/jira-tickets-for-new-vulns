@@ -40,7 +40,7 @@ func getVulnsWithoutTicket(flags flags, projectID string, maturityFilter []strin
 			Severities: []string{"high"},
 			Types:      []string{"vuln", "license"},
 			Priority:   Priority{score{Min: 0, Max: 1000}},
-			Ignored:    false,
+			Ignored:    true,
 			Patched:    false,
 		},
 	}
